@@ -1,0 +1,42 @@
+{
+  "name": "houzicha",
+  "version": "1.0.0",
+  "description": "a site of abouthiropy",
+  "main": "src/js/index.js",
+  "scripts": {
+    "build": "npm run pug && npm run webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel ./src/js --out-file bundle/index.js",
+    "webpack": "webpack",
+    "watch": "webpack --watch --progress --colors",
+    "pug": "pug src/pug/index.pug && mv ./src/pug/index.html .",
+    "sass": "node-sass src/scss/style.scss bundle/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abouthiroppy/houzicha.git"
+  },
+  "author": "abouthiroppy <git@about-hiroppy.com> (http://about-hiroppy.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abouthiroppy/houzicha/issues"
+  },
+  "homepage": "http://about-hiroppy.com",
+  "dependencies": {
+    "easy-responsive-tabs": "0.0.2",
+    "jquery": "^3.0.0",
+    "jquery.easing": "^1.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.9.2",
+    "pug": "^2.0.0-beta3",
+    "pug-cli": "^1.0.0-alpha6",
+    "webpack": "^1.13.1"
+  }
+}
